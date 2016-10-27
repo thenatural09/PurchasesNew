@@ -71,6 +71,7 @@ public class PurchaseController {
         model.addAttribute("showNext",plist.hasNext());
         model.addAttribute("prevPage",page-1);
         model.addAttribute("showPrev",plist.hasPrevious());
+        model.addAttribute("category",category);
         return "home";
     }
 

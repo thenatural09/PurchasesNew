@@ -12,10 +12,10 @@
 
 <div class="buttonH">
     {{#showPrev}}
-    <a href="/?page={{prevPage}}"><button>Back</button></a>
+    <a href="/?page={{prevPage}}{{#category}}&category={{.}}{{/category}}"><button>Back</button></a>
     {{/showPrev}}
     {{#showNext}}
-    <a href="/?page={{nextPage}}"><button>Next</button></a>
+    <a href="/?page={{nextPage}}{{#category}}&category={{.}}{{/category}}"><button>Next</button></a>
     {{/showNext}}
 </div>
 
